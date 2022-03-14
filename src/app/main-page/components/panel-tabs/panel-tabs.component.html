@@ -1,0 +1,7 @@
+<div class="tabs">
+    <div class="tabs__container">
+        <p *ngFor="let tab of tabs; index as i" class="tabs__tab" [ngClass]="{'tabs__active-tab': tab.selected}" (click)="chooseTab(i)">
+            {{tab.content}} <mat-icon class="tabs__tab-icon" *ngIf="tab.selected" [@iconState]>arrow_drop_down</mat-icon>
+        </p>
+    </div>
+</div>

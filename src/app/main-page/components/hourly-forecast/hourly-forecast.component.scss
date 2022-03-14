@@ -1,0 +1,52 @@
+.hourly-forecast {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    p {
+        margin: 0;
+        text-align: center;
+    }
+    &__single-item {
+        height: 100%;
+        padding: 15px 20px 15px 20px;
+        box-sizing: border-box;
+        border-right: 1px solid rgba(175, 175, 175, 0.6);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__time {
+        font-size: 23px;
+        color: white;
+    }
+    &__description-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 15px 0;
+        width: 150px;
+    }
+    &__icon {
+        width: 55px;
+        height: 55px;
+    }
+    &__description {
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    &__temperature {
+        font-size: 50px;
+        color: white;
+    }
+    &__spinner-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 0 0 5%;
+    }
+}

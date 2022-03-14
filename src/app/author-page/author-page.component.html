@@ -1,0 +1,61 @@
+<div class="author-page">
+    <div class="author-page__wrapper" [@showContent]>
+        <div class="author-page__description-block">
+            <p class="author-page__name">Oleksandr Shcherbyna</p>
+            <div class="author-page__break-line">
+                <div class="author-page__horizontal-1">
+                    <div class="author-page__line-container"><div class="author-page__vertical-1"></div></div>
+                </div>
+            </div>
+            <p class="author-page__position">Frontend developer</p>
+            <div class="author-page__break-line">
+                <div class="author-page__horizontal-2">
+                    <div class="author-page__line-container"><div class="author-page__vertical-2"></div></div>
+                </div>
+            </div>
+            <p class="author-page__project-description">This project was designed and coded by an Angular developer who 
+                uses creative and functional approaches. These approaches are used along with modern technologies and 
+                libraries for their solutions.<br>A lot of effort and logic was attached to the design and functionality of the application, 
+                which allowed to achieve a high-quality design with the ability to view a large amount of data while 
+                using an intuitive and pleasant interface in parallel.<br> Credo of the author, which describes his approach 
+                to the project and his work in general: <span class="author-page__quote">"When every detail and decision, 
+                was applied with maximum effort and enthusiasm - the result reaches the ideal level."</span></p>
+            <div class="author-page__break-line">
+                <div class="author-page__horizontal-3">
+                    <div class="author-page__line-container"><div class="author-page__vertical-3"></div></div>
+                </div>
+            </div>
+            <div class="author-page__technologies-block">
+                <div class="author-page__btn-container">
+                    <button class="author-page__technologies-btn" (click)="showTechnologies()">Show Technologies List</button>
+                </div>
+                <div class="author-page__list-container" [ngClass]="{'author-page__toggle-list': showList}">
+                    <p class="author-page__technologies-list" [ngClass]="{'author-page__toggle-list': showList}">
+                        <span class="author-page__technologies">Technologies: </span>
+                        Angular 2+ | TypeScript | Figma | SCSS | Angular Material | Moment.js | RxJS | SimpleBar</p>
+                </div>
+            </div>
+            <div class="author-page__break-line">
+                <div class="author-page__horizontal-4">
+                    <div class="author-page__line-container"><div class="author-page__vertical-4"></div></div>
+                </div>
+            </div>
+            <div class="author-page__social-links-wrapper">
+                <div class="author-page__link-container" *ngFor="let link of links">
+                    <div class="author-page__tooltip">{{link.tooltip}}</div>
+                    <a class="author-page__link" [href]="link.link" target="_blank">
+                        <i [class]="link.classNames"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="author-page__photo-block">
+            <div class="author-page__wrapper-background" (click)="showPhotoMessage()">
+                <div class="author-page__photo-wrapper"></div>
+                <div class="author-page__photo-message" *ngIf="showMessage" [@message]>Awesome project, huh?</div>
+                <i class="fa-solid fa-hand-point-up author-page__click-icon"></i>
+            </div>
+        </div>
+    </div>
+</div>

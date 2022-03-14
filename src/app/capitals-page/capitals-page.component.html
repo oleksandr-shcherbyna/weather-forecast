@@ -1,0 +1,45 @@
+<div class="cities-page" *ngIf="showErrorSpinner === 'loading' || showErrorSpinner === 'retry'">
+    <div class="cities-page__error-call-container">
+        <mat-spinner></mat-spinner>
+        <p *ngIf="this.citiesService.showErrorMessage">Sorry, something went wrong...
+            <span *ngIf="!showRetryButton"> Retry in {{retryCallSeconds}}...</span>
+        </p>
+        <p *ngIf="!this.citiesService.showErrorMessage" class="cities-page__empty-string">S</p>
+        <button class="cities-page__retry-button" (click)="tryCallAgain(1); hideButton()" *ngIf="showRetryButton">
+            Retry<mat-icon class="cities-page__retry-icon">replay</mat-icon>
+        </button>
+    </div>
+</div>
+<div class="cities-page" *ngIf="showErrorSpinner === 'success'">
+    <div class="cities-page__city" *ngFor="let city of citiesForecast; index as cityIndex">
+        <div class="cities-page__spinner-container" *ngIf="city.showSpinner">
+            <mat-spinner></mat-spinner>
+        </div>
+        <div class="cities-page__info-container" [ngStyle]="{'background-image': city.background}" *ngIf="!city.showSpinner">
+            <div class="cities-page__info-wrapper" [@showForecast]>
+                <div class="cities-page__time-city-wrapper">
+                    <p class="cities-page__time">{{city.localTime}}</p>
+                    <p class="cities-page__city-name">{{city.cityName | titlecase}}</p>
+                </div>
+                <div class="cities-page__description-container">
+                    <img [src]="city.iconName" class="cities-page__icon">
+                    <p class="cities-page__description">{{city.weatherStatus | letterTransform}}</p>
+                </div>
+                <p class="cities-page__temperature">{{city.temperature | temperature}}</p>
+            </div>
+            <div class="cities-page__search-bar">
+                <form class="cities-page__search-bar-form" (ngSubmit)="searchNewCity(cityIndex)" [formGroup]="form">
+                    <input 
+                        class="cities-page__input-search-bar" 
+                        [ngStyle]="{'background': city.dayTime === 'day' ? 'rgb(0, 0, 0, 0.4)' : 'rgb(255, 255, 255, 0.1)'}" 
+                        placeholder="Change city"
+                        formControlName="newCity"
+                        (focus)="removeError(cityIndex)">
+                    <button class="cities-page__button-search-bar" type="button" (click)="searchNewCity(cityIndex)"><mat-icon>find_replace</mat-icon></button>
+                    <div class="cities-page__error-underline" [ngStyle]="{'width': city.showInputError.underlineWidth}"></div>
+                </form>
+                <p class="cities-page__error-message" *ngIf="this.city.showInputError.displayErrorMessage" [@errorState]>Please, enter a correct city name *</p>
+            </div>
+        </div>
+    </div>
+</div>

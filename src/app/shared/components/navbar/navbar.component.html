@@ -1,0 +1,18 @@
+<div class="nav-panel">
+    <div class="nav-panel__nav-container" [ngStyle]="{'background': navBarColor}" [ngClass]="{'nav-panel__show-on-hover': showPart, 'nav-panel__show-navbar': showNavPanel, 'nav-panel__show-prompt': showPrompt}">
+        <nav class="nav-panel__navbar" (mouseenter)="showNavbarPart()" (mouseleave)="hideNavBarPart()">
+            <div class="nav-panel__links-container">
+                <a *ngFor="let link of links; index as linkIndex" 
+                    class="nav-panel__link" 
+                    [routerLink]="link.routerLink" 
+                    routerLinkActive="nav-panel__link-active"
+                    (click)="selectLink(linkIndex)">{{link.linkTitle}}<mat-icon class="nav-panel__link-icon" *ngIf="link.selected" [@iconState]>arrow_drop_down</mat-icon></a>
+            </div>
+        </nav>     
+        <button class="nav-panel__slide-button" 
+            (mouseenter)="showNavbarPart()" 
+            (mouseleave)="hideNavBarPart()"
+            (click)="showNavbar()"
+            [ngStyle]="{'background': navBarColor}"><mat-icon [ngClass]="{'nav-panel__rotate-icon': rotateIcon}">arrow_drop_down</mat-icon></button>
+    </div>
+</div>

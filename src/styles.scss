@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.simplebar-content {
+    height: 100%;
+}
+.simplebar-scrollbar::before {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+}
+.simplebar-scrollbar {
+    height: 10px !important;
+}
+.simplebar-horizontal {
+    height: 17px !important;
+}

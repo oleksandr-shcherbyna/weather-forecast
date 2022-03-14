@@ -1,0 +1,16 @@
+<div class="daily-page" [ngStyle]="{'background': 'black'}" *ngIf="dataService.isLoading | async">
+    <div class="daily-page__spinner-container">
+        <mat-spinner></mat-spinner>
+    </div>
+</div>
+
+<div class="daily-page" [ngStyle]="{'background-image': background}" *ngIf="!(dataService.isLoading | async)">
+    <div class="daily-page__info-panel-container">
+        <app-info-panel></app-info-panel>
+    </div>
+    <app-bottom-panel>
+        <div class="daily" [ngClass]="{'bottom-center-spinner': dataService.isLoadingBottomPanel | async}">
+            <app-daily-forecast></app-daily-forecast>
+        </div>
+    </app-bottom-panel>
+</div>

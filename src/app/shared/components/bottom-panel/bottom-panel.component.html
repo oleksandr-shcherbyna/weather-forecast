@@ -1,0 +1,11 @@
+<div class="bottom-panel" [ngStyle]="{'background': panelColor}" #scrollBlock>
+    <ngx-simplebar [options]="options" (wheel)="wheelScrollSimpleBar($event)">
+        <div class="bottom-panel__container">
+            <ng-content></ng-content>
+
+            <ng-content select=".hourly"></ng-content>
+            <ng-content select=".daily"></ng-content>
+            <ng-content select=".additional"></ng-content>
+        </div>
+    </ngx-simplebar>
+</div>

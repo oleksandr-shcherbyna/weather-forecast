@@ -1,0 +1,128 @@
+.daily-page:nth-child(1) {
+    border-left: 1px solid rgba(175, 175, 175, 0.6);
+}
+.daily-page {
+    p {
+        margin: 0 !important;
+    }
+}
+.daily-forecast {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    p {
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+    &__single-item {
+        height: 100%;
+        padding: 15px 20px 15px 20px;
+        box-sizing: border-box;
+        border-right: 1px solid rgba(175, 175, 175, 0.6);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__single-item-padding {
+        padding: 15px 30px 15px 20px !important;
+    }
+    &__left-part-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    &__right-part-temperature {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 50px;
+    }
+    &__temperature-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        align-items: center;
+    }
+    &__temperature-daytime, &__number-temperature {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__daytime {
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 15px;
+    }
+    &__number {
+        color: white;
+        font-size: 18px;
+    }
+    &__day, &__date, &__mounth, &__temperature {
+        color: white;
+    }
+    &__day {
+        font-size: 20px;
+        margin: 0 0 15px 0 !important;
+    }
+    &__date {
+        font-size: 40px;
+    }
+    &__mounth {
+        font-size: 15px;
+    }
+    &__description-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0 25px 0;
+        width: 150px;
+    }
+    &__description-container-margin {
+        margin: 0;
+    }
+    &__icon {
+        width: 55px;
+        height: 55px;
+    }
+    &__description {
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0.4);
+        margin: 0 !important;
+    }
+    &__temperature-container {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__single-container-temperature {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__temperature {
+        font-size: 35px;
+        margin: 0 0 5px 0 !important;
+    }
+    &__min-max {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.4);
+        margin: 0 !important;
+    }
+    &__spinner-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 0 0 5%;
+    }
+}

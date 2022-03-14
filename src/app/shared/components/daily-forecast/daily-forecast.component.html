@@ -1,0 +1,36 @@
+<div class="daily-forecast" *ngIf="dataService.isLoadingBottomPanel | async">
+    <div class="daily-forecast__spinner-container">
+        <mat-spinner></mat-spinner>
+    </div>
+</div>
+<div class="daily-forecast" [ngClass]="{'daily-page': isDailyForecastPage}" *ngIf="!(dataService.isLoadingBottomPanel | async)" [@showForecast]>
+    <div class="daily-forecast__single-item" [ngClass]="{'daily-forecast__single-item-padding': isDailyForecastPage}" *ngFor="let item of dailyForecast">
+        <div class="daily-forecast__left-part-info">
+            <p class="daily-forecast__day">{{item.date[0]}}</p>
+            <p class="daily-forecast__date">{{item.date[2]}}</p>
+            <p class="daily-forecast__mounth">{{item.date[1]}}</p>
+    
+            <div class="daily-forecast__description-container" [ngClass]="{'daily-forecast__description-container-margin': isDailyForecastPage}">
+                <img [src]="item.iconName" class="daily-forecast__icon">
+                <p class="daily-forecast__description">{{item.weather.description | letterTransform}}</p>
+            </div>
+            
+            <div class="daily-forecast__temperature-container" *ngIf="!isDailyForecastPage">
+                <div class="daily-forecast__single-container-temperature">
+                    <p class="daily-forecast__temperature">{{item.tempPoints.min | temperature}}</p>
+                    <p class="daily-forecast__min-max">min.</p>
+                </div>
+                <div class="daily-forecast__single-container-temperature">
+                    <p class="daily-forecast__temperature">{{item.tempPoints.max | temperature}}</p>
+                    <p class="daily-forecast__min-max">max.</p>
+                </div>
+            </div>
+        </div>
+        <div class="daily-forecast__right-part-temperature" *ngIf="isDailyForecastPage">
+            <div class="daily-forecast__temperature-wrapper" *ngFor="let tempItem of temperatureItems">
+                <div class="daily-forecast__temperature-daytime"><p class="daily-forecast__daytime">{{tempItem.name}}</p></div>
+                <div class="daily-forecast__number-temperature"><p class="daily-forecast__number">{{item.tempPoints[tempItem.key] | temperature}}</p></div>
+            </div>
+        </div>
+    </div>
+</div>
