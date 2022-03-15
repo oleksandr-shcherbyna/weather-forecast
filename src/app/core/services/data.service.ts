@@ -108,8 +108,8 @@ export class DataService {
   }
 
   getForecast(userCity: string, bottomPanelForecast: boolean, appInit: boolean): void | null {
-    this.userCity = userCity;
     this.http.get<ICurrentForecast>(`https://api.openweathermap.org/data/2.5/weather?q=${userCity}&appid=cdcbe152f500b2f51d3d28e8fad187b5`).subscribe(currForecast => {
+      this.userCity = userCity;
       let weather;
       this.atmosphere.find(elem => elem === currForecast.weather[0].main) ? weather = 'Atmosphere' : weather = currForecast.weather[0].main;
       currForecast.weather[0].description === 'few clouds' ? weather = 'Clear' : weather = weather;
@@ -135,6 +135,7 @@ export class DataService {
         return;
       }
       if (!appInit) this.appInitialized.next(true); 
+      this.errorObject.next({underlineWidth: '0px', displayErrorMessage: false});
     }, () => {
       this.errorObject.next({underlineWidth: '100%', displayErrorMessage: true});
       this.infoAnimation.next('');
