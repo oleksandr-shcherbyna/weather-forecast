@@ -43,6 +43,45 @@ This project has been developed and coded as a single-page web application that 
 
 <h2 id="setup">Setup 🔧:</h2>
 
+#### Install Node.js
+
+Make sure you have installed <a href="https://nodejs.org/en/about/">Node.js</a>.
+
+#### Install Angular CLI
+
+Install the CLI using the npm package manager:
+
+```shell
+npm install -g @angular/cli
+```
+
+#### Clone the repository
+
+```shell
+git clone https://github.com/oleksandr-shcherbyna/weather-forecast.git
+cd weather-firecast
+```
+
+#### Install npm packages
+
+Install the `npm` packages described in the `package.json`:
+
+```shell
+npm install
+```
+
+#### Run a project
+
+```shell
+ng serve
+```
+
+or
+
+```shell
+npm start
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
