@@ -1,4 +1,4 @@
-<h1 align="center" style="font-style: oblique;">Angular Weather Forecast Application</h1>
+<h1 align="center">Angular Weather Forecast Application</h1>
 
 <p align="center">
   <img src="src/assets/images/other/readme-icon.png" alt="angular-logo" width="120px" height="120px"/>
@@ -10,11 +10,26 @@
   <br>
 </p>
 
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-application">About application</a></li>
+    <li><a href="#setup">Setup</a></li>
+    <li><a href="#general-information">General information</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#technologies-and-libraries">Technologies and libraries</a></li>
+    <li><a href="#angular-main-features">Angular main features</a></li>
+    <li><a href="#additional-information">Additional information</a></li>
+  </ol>
+</details>
+
 <hr>
 
 # About application ☁️:
 
 This project has been developed and coded as a single-page web application that provides the possibility to view the weather in different cities worldwide.
+
+## Setup
 
 ## General information ☔:
 
