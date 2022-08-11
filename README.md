@@ -23,11 +23,23 @@
   </ol>
 </details>
 
+<details>
+  <summary>APIs list</summary>
+  <ol>
+    <li><a href="#about-application">Open weather map</a></li>
+    <li><a href="#setup">Setup</a></li>
+    <li><a href="#general-information">General information</a></li>
+  </ol>
+</details>
+
 <hr>
 
 <h1 id="about-application">About application ☁️:</h1>
 
 This project has been developed and coded as a single-page web application that provides the possibility to view the weather in different cities worldwide.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <h2 id="setup">Setup 🔧:</h2>
 
