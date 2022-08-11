@@ -13,7 +13,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#about-application-☁️:">About application</a></li>
+    <li><a href="#about-application">About application</a></li>
     <li><a href="#setup">Setup</a></li>
     <li><a href="#general-information">General information</a></li>
     <li><a href="#features">Features</a></li>
@@ -25,18 +25,18 @@
 
 <hr>
 
-# About application ☁️:
+<h1 id="about-application">About application ☁️:</h1>
 
 This project has been developed and coded as a single-page web application that provides the possibility to view the weather in different cities worldwide.
 
-## Setup
+<h2 id="setup">Setup 🔧</h2>
 
-## General information ☔:
+<h2 id="general-information">General information ☔:</h2>
 
 In addition to viewing the temperature in the city, the user can view more things. The hourly forecast, 7 days forecast (with a list of temperatures during the day on a separate page), additional data such as sunset-dawn schedule that changes dynamically depending on the time of day, current time in the selected city, wind speed, pressure, etc. These things are available for users' choice.
 The user can view the weather and time in 4 cities simultaneously, which he will choose. The cities will be saved, and when the application is reopened, the user will see the cities he indicated.
 
-## Features ❄️:
+<h2 id="features">Features ❄️:</h2>
 
 * When entering the site, the application automatically reads the user's geolocation and provides him with up-to-date data.
 * Styles for some elements are changing depending on the time of day throughout the application. In addition to that, the background shows the current weather and changes in real-time, showing the current weather conditions with an aesthetically designed UI of the entire application.
@@ -45,7 +45,7 @@ The user can view the weather and time in 4 cities simultaneously, which he will
 * Preloader, Angular animations, etc., were used to create a modern and pleasant design. The application is mobile-friendly.
 * Reactive forms were used to validate user data and exclude unnecessary requests to the server.
 
-## Technologies and libraries ☀️:
+<h2 id="technologies-and-libraries">Technologies and libraries ☀️:</h2>
 
 * Angular - was used as the core framework.
 * Figma - was used to develop the responsive and modern design before writing code.
@@ -56,7 +56,7 @@ The user can view the weather and time in 4 cities simultaneously, which he will
 * RxJS - was used to work with Observables, BehaviourSubjects, subscriptions, etc. Operators were used for unsubscribing, managing callback-based code, etc...
 * TypeScript - was used for providing a richer environment for spotting common errors.
 
-### Angular main features ⛅:
+<h3 id="angular-main-features">Angular main features ⛅:</h3>
 
 Angular features which were used in the application (except the most common): interceptor, asynchronous code structuring, angular animations, proper file structuring, reusable components, Observables, BehaviourSubjects, custom pipes, routing, reactive forms, etc...
 
