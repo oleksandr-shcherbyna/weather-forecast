@@ -19,7 +19,7 @@
     <li><a href="#features">Features</a></li>
     <li><a href="#technologies-and-libraries">Technologies and libraries</a></li>
     <li><a href="#angular-main-features">Angular main features</a></li>
-    <li><a href="#additional-information-🌛:">Additional information</a></li>
+    <li><a href="#additional-information-:first_quarter_moon_with_face::">Additional information</a></li>
   </ol>
 </details>
 
