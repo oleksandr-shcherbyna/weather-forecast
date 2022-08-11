@@ -1,4 +1,4 @@
-<h1 align="center" style="font-style: oblique">Angular Weather Forecast Application</h1>
+<h1 align="center" style="font-style: oblique;">Angular Weather Forecast Application</h1>
 
 <p align="center">
   <img src="src/assets/images/other/readme-icon.png" alt="angular-logo" width="120px" height="120px"/>
