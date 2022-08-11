@@ -1,3 +1,17 @@
+<h1 align="center" style="font-style: oblique">Angular Weather Forecast Application</h1>
+
+<p align="center">
+  <img src="src/assets/images/other/readme-icon.png" alt="angular-logo" width="120px" height="120px"/>
+  <br>
+  <a href="https://angular.io/"><img src="https://img.shields.io/badge/Angular%20CLI-v.12.2.14-red.svg"/></a>&nbsp;
+  <a href="https://nodejs.org/en"><img src="https://img.shields.io/badge/Node-v.14.17.2-brightgreen.svg"/></a>&nbsp;
+  <a href="https://www.npmjs.com/package/npm"><img src="https://img.shields.io/badge/npm-v.6.14.13-green.svg"/></a>&nbsp;
+  <a href="https://momentjs.com"><img src="https://img.shields.io/badge/Moment.js-v.2.29.1-orange.svg"/></a>
+  <br>
+</p>
+
+<hr>
+
 # About application ☁️:
 
 This project has been developed and coded as a single-page web application that provides the possibility to view the weather in different cities worldwide.
