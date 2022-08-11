@@ -79,7 +79,7 @@ export class DataService {
     // API that returns users location without asking permission
     this.http.get<IGeolocation>('https://geolocation-db.com/json/').subscribe(geolocation => {
     this.userCity = geolocation.city;
-    this.getForecast(this.userCity, true, false);
+    geolocation && geolocation.city === null ? this.getIpInfo() : this.getForecast(this.userCity, true, false);
     }, () => {
       // To use google maps platform credit card must be added in developers console (user gives permission for location)
       // navigator.geolocation.watchPosition(position => {
@@ -97,12 +97,17 @@ export class DataService {
       // });
 
       // Second API which will return users location without asking permission if first one will return error 
-      this.http.get<IIpInfo>('https://ipinfo.io/json?token=3ec256f8e98cdd').subscribe(reserveGeolocation => {
-        this.userCity = reserveGeolocation.city;
-        this.getForecast(this.userCity, true, false);
-      }, () => {
-        this.getForecast('London', true, false);
-      })
+      this.getIpInfo();
+    });
+  }
+
+  getIpInfo(): void {
+    this.http.get<IIpInfo>('https://ipinfo.io/json?token=3ec256f8e98cdd').subscribe(reserveGeolocation => {
+      this.userCity = reserveGeolocation.city;
+      reserveGeolocation && reserveGeolocation.city === null ? 
+      this.getForecast('London', true, false) : 
+      this.getForecast(this.userCity, true, false);
+    }, () => {
       this.getForecast('London', true, false);
     });
   }
