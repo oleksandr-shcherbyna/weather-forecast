@@ -26,9 +26,9 @@
 <details>
   <summary>APIs list</summary>
   <ol>
-    <li><a href="#about-application">Open weather map</a></li>
-    <li><a href="#setup">Setup</a></li>
-    <li><a href="#general-information">General information</a></li>
+    <li><a href="https://openweathermap.org">Open weather map</a></li>
+    <li><a href="https://geolocation-db.com">Geolocation DB</a></li>
+    <li><a href="https://ipinfo.io">IP info</a></li>
   </ol>
 </details>
 
