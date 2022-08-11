@@ -1,4 +1,4 @@
-<h1 align="center">Angular Weather Forecast Application</h1>
+<h1 align="center" id="readme-top">Angular Weather Forecast Application</h1>
 
 <p align="center">
   <img src="src/assets/images/other/readme-icon.png" alt="angular-logo" width="120px" height="120px"/>
@@ -29,12 +29,18 @@
 
 This project has been developed and coded as a single-page web application that provides the possibility to view the weather in different cities worldwide.
 
-<h2 id="setup">Setup 🔧</h2>
+<h2 id="setup">Setup 🔧:</h2>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <h2 id="general-information">General information ☔:</h2>
 
 In addition to viewing the temperature in the city, the user can view more things. The hourly forecast, 7 days forecast (with a list of temperatures during the day on a separate page), additional data such as sunset-dawn schedule that changes dynamically depending on the time of day, current time in the selected city, wind speed, pressure, etc. These things are available for users' choice.
 The user can view the weather and time in 4 cities simultaneously, which he will choose. The cities will be saved, and when the application is reopened, the user will see the cities he indicated.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <h2 id="features">Features ❄️:</h2>
 
@@ -44,6 +50,9 @@ The user can view the weather and time in 4 cities simultaneously, which he will
 * The information is always up-to-date and updated with a minimum number of requests to the server.
 * Preloader, Angular animations, etc., were used to create a modern and pleasant design. The application is mobile-friendly.
 * Reactive forms were used to validate user data and exclude unnecessary requests to the server.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <h2 id="technologies-and-libraries">Technologies and libraries ☀️:</h2>
 
@@ -56,9 +65,15 @@ The user can view the weather and time in 4 cities simultaneously, which he will
 * RxJS - was used to work with Observables, BehaviourSubjects, subscriptions, etc. Operators were used for unsubscribing, managing callback-based code, etc...
 * TypeScript - was used for providing a richer environment for spotting common errors.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 <h3 id="angular-main-features">Angular main features ⛅:</h3>
 
 Angular features which were used in the application (except the most common): interceptor, asynchronous code structuring, angular animations, proper file structuring, reusable components, Observables, BehaviourSubjects, custom pipes, routing, reactive forms, etc...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <h3 id="additional-information">Additional information 🌛:</h3>
 
@@ -66,3 +81,5 @@ Big thanks to openweathermap.org for providing free APIs, which were used as res
 
 In the daily forecast tab, the forecast is shown for 7 days instead of 16, since free APIs do not provide such an opportunity without paying a subscription. 
 The subscription was not acquired, because the application was conceived as a project for training.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
