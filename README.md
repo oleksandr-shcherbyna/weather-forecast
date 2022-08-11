@@ -13,13 +13,13 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#about-application">About application</a></li>
+    <li><a href="#about-application-☁️:">About application</a></li>
     <li><a href="#setup">Setup</a></li>
     <li><a href="#general-information">General information</a></li>
     <li><a href="#features">Features</a></li>
     <li><a href="#technologies-and-libraries">Technologies and libraries</a></li>
     <li><a href="#angular-main-features">Angular main features</a></li>
-    <li><a href="#additional-information">Additional information</a></li>
+    <li><a href="#additional-information-🌛:">Additional information</a></li>
   </ol>
 </details>
 
