@@ -19,7 +19,7 @@
     <li><a href="#features">Features</a></li>
     <li><a href="#technologies-and-libraries">Technologies and libraries</a></li>
     <li><a href="#angular-main-features">Angular main features</a></li>
-    <li><a href="#additional-information-:first_quarter_moon_with_face::">Additional information</a></li>
+    <li><a href="#additional-information">Additional information</a></li>
   </ol>
 </details>
 
@@ -60,7 +60,7 @@ The user can view the weather and time in 4 cities simultaneously, which he will
 
 Angular features which were used in the application (except the most common): interceptor, asynchronous code structuring, angular animations, proper file structuring, reusable components, Observables, BehaviourSubjects, custom pipes, routing, reactive forms, etc...
 
-### Additional information 🌛:
+### Additional information <span>🌛:</span>
 
 Big thanks to openweathermap.org for providing free APIs, which were used as resources for weather data.
 
