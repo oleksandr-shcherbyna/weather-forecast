@@ -20,7 +20,9 @@
         position: relative;
         transition: color 0.3s;
         padding: 10px 10px 10px 0;
-        display: block;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         position: relative;
     }
     &__active-tab {
@@ -33,7 +35,7 @@
     }
     &__tab-icon {
         transform: rotate(90deg) translateY(-80%) scale(1.2);
-        position: absolute;
-        right: 0;
+        // position: absolute;
+        // right: 0;
     }
 }

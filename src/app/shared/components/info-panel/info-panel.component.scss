@@ -228,3 +228,22 @@
         }
     } 
 }
+
+@media all and (max-width: 500px) {
+    .info-panel {
+        gap: 30px;
+        &__information-container {
+            gap: 30px;
+        }
+        &_temperature {
+            font-size: 60px;
+        }
+        &__description {
+            width: 100vw;
+        }
+        &__search-bar {
+            height: 50px;
+            padding-bottom: 20px;
+        }
+    }
+}
