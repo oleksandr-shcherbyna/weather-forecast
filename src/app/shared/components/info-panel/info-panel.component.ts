@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { state, style, transition, trigger, animate } from '@angular/animations';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { takeUntil } from 'rxjs/operators';
 
 import { Unsubscriber } from '../../unsubscriber.class';
@@ -55,8 +55,8 @@ export class InfoPanelComponent extends Unsubscriber implements OnInit, OnDestro
   dataLoaded = true;
   getCurrentTimeInterval: any;
   getCurrentTimeTimeout: any;
-  form = new FormGroup({
-    newCity: new FormControl('', [
+  form = new UntypedFormGroup({
+    newCity: new UntypedFormControl('', [
       Validators.pattern(/^([a-zA-Z\u0080-\u024F]+(?:. |-| |'))*[a-zA-Z\u0080-\u024F]*$/),
       Validators.required
     ])
